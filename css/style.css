@@ -1,0 +1,38 @@
+body {
+  background-color:#111;
+}
+
+#input-container {
+  position:absolute;
+  left:50%;
+  top:64px;
+  transform:translateX(-50%);
+}
+
+#output-container {
+  position:absolute;
+  left:50%;
+  top:168px;
+  transform:translateX(-50%);
+  font-size:48px;
+  color:#FAFAFA;
+}
+
+#input-container > * {
+  font-size:48px;
+}
+
+#input {
+  width:300px;
+  border:0;
+  border-bottom:1px solid white;
+  background-color:transparent;
+  color:#FAFAFA;
+}
+
+#button {
+  color:#FAFAFA;
+  background-color:transparent;
+  border:1px solid white;
+  margin-left:16px;
+}
