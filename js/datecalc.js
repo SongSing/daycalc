@@ -72,6 +72,10 @@ function calcDay(month, day, year) {
         (month === 1 ? (year % 4 === 0 ? 4 : 3) : (year % 4 === 0 ? 29 : 28)));
 
     var dayThing = day - monthThing;
+	console.log(dayThing,yearThing,centuryAnchor);
+	
+	var sum = dayThing + yearThing + centuryAnchor;
+	while (sum < 0) sum += 7; // cant have negative bc used for an index
 
-    return (dayThing + yearThing + centuryAnchor) % 7;
+    return sum % 7;
 }
