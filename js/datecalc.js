@@ -19,8 +19,14 @@ function doCalc() {
 
     var day = calcDay(date);
     var name = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][day];
+    var a = 0;
 
-    el("output").innerText = name;
+    a = new Date(date[2], date[0] - 1, date[1]);
+    a -= Date.now();
+    a = a / 1000 / 60 / 60 / 24;
+    a = Math.ceil(a);
+
+    el("output").innerText = name + "\n" + "(" + a + " day(s) from now)";
 }
 
 function tryParse(input) {

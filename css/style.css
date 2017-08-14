@@ -16,6 +16,7 @@ body {
   transform:translateX(-50%);
   font-size:48px;
   color:#FAFAFA;
+  text-align:center;
 }
 
 #input-container > * {
